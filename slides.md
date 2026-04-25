@@ -532,7 +532,7 @@ class: cycling-growth
 }
 </style>
 
-# Cycling is growing — what's possible
+# Cycling mode shift
 
 <a href="https://www.tandfonline.com/doi/full/10.1080/15568318.2026.2649315" target="_blank"><img src="/cycling-mode-share-4cities.png" /></a>
 

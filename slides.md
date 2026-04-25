@@ -481,6 +481,103 @@ People need (and want) transportation alternatives…
 [ALA]: https://www.lung.org/research/sota/city-rankings/states/new-jersey/hudson
 
 ---
+class: wt
+dragPos:
+  wt: 366,211,297,_
+  bb1: 196,17,385,_
+  bb2: 580,16,392,_
+---
+
+<style>
+.wt {
+  &+footer { display: none; }
+  .body {
+    width: 75%;
+    margin-bottom: .5rem;
+  }
+  & > div:nth-child(2) {
+    margin-top: 0;
+  }
+  video.wt-vid {
+    border: 1rem solid #00793f;
+    border-left: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+  }
+  .left {
+    width: 36%;
+    &.inner > ul > li { list-style: none; }
+  }
+}
+</style>
+
+# [Jersey City Ward Tour][wt]
+
+<div class="body">
+
+The **busiest hour of the year** on JFK Blvd and Rt 139:<br/>2,000 cyclists, rolling closures of 5-30 mins.
+</div>
+
+<div class="left">
+
+- 16 miles, 6 wards
+- JFK: 25,000 vehicles/day, ≤2,000/hr
+</div>
+
+<video class="wt-vid" src="/wt.mp4" autoplay muted loop controls />
+
+<div class="left">
+
+Children can bike from downtown to Greenville to West Side to Heights and back — **when we make it safe**.
+</div>
+
+<div v-drag="'wt'"><a href="https://www.bikejc.org/ward-tour" target="_blank"><img src="/wt.png" /></a></div>
+
+[wt]: https://www.bikejc.org/ward-tour
+<div v-click class="left">
+<div v-drag="'bb2'"><a href="https://instagram.com/jcbikebus" target="_blank"><img src="/bike-bus2.jpeg" /></a></div>
+<div v-drag="'bb1'"><a href="https://instagram.com/jcbikebus" target="_blank"><img src="/bike-bus1.jpeg" /></a></div>
+</div>
+
+---
+class: cycling-growth
+---
+
+<style>
+.slidev-layout.cycling-growth {
+  &+footer { display: none; }
+  padding: 0.6rem 1rem 0 1rem;
+  text-align: center;
+  h1 {
+    margin: 0 0 0.3rem 0;
+    font-size: 1.4rem;
+  }
+  a img {
+    max-width: 96%;
+    max-height: 78vh;
+    display: inline-block;
+    border-radius: 4px;
+  }
+  .src {
+    font-size: 0.7rem;
+    opacity: 0.7;
+    margin-top: 0.3rem;
+  }
+}
+</style>
+
+# Cycling mode shift
+
+<a href="https://www.tandfonline.com/doi/full/10.1080/15568318.2026.2649315" target="_blank"><img src="/cycling-mode-share-4cities.png" /></a>
+
+<div class="src">
+
+Buehler, Pucher, Moran, de Lanversin, Aldred (Apr '26), [Int'l J. of Sustainable Transportation](https://www.tandfonline.com/doi/full/10.1080/15568318.2026.2649315)
+</div>
+
+---
 layout: iframe-right
 url: https://ctbk.dev
 scale: 0.8
@@ -530,42 +627,6 @@ Show station map by add date
 [2505]: https://ctbk.dev/stations?ll=40.717-74.045&z=15&ss=JC115&ym=2505
 [ebikes]: https://ctbk.dev/?s=b&pct&rt=ce&d=2002-&r=jh
 [subs]: https://ctbk.dev/?s=u&pct&r=jh
-
----
-class: cycling-growth
----
-
-<style>
-.slidev-layout.cycling-growth {
-  &+footer { display: none; }
-  padding: 0.6rem 1rem 0 1rem;
-  text-align: center;
-  h1 {
-    margin: 0 0 0.3rem 0;
-    font-size: 1.4rem;
-  }
-  a img {
-    max-width: 96%;
-    max-height: 78vh;
-    display: inline-block;
-    border-radius: 4px;
-  }
-  .src {
-    font-size: 0.7rem;
-    opacity: 0.7;
-    margin-top: 0.3rem;
-  }
-}
-</style>
-
-# Cycling mode shift
-
-<a href="https://www.tandfonline.com/doi/full/10.1080/15568318.2026.2649315" target="_blank"><img src="/cycling-mode-share-4cities.png" /></a>
-
-<div class="src">
-
-Buehler, Pucher, Moran, de Lanversin, Aldred (Apr '26), [Int'l J. of Sustainable Transportation](https://www.tandfonline.com/doi/full/10.1080/15568318.2026.2649315)
-</div>
 
 ---
 layout: iframe-right
@@ -694,67 +755,6 @@ dragPos:
 </div>
 
 [vd]: https://www.hcnj.us/blog/2025/05/22/15886/
-
----
-class: wt
-dragPos:
-  wt: 366,211,297,_
-  bb1: 196,17,385,_
-  bb2: 580,16,392,_
----
-
-<style>
-.wt {
-  &+footer { display: none; }
-  .body {
-    width: 75%;
-    margin-bottom: .5rem;
-  }
-  & > div:nth-child(2) {
-    margin-top: 0;
-  }
-  video.wt-vid {
-    border: 1rem solid #00793f;
-    border-left: none;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-  }
-  .left {
-    width: 36%;
-    &.inner > ul > li { list-style: none; }
-  }
-}
-</style>
-
-# [Jersey City Ward Tour][wt]
-
-<div class="body">
-
-The **busiest hour of the year** on JFK Blvd and Rt 139:<br/>2,000 cyclists, rolling closures of 5-30 mins.
-</div>
-
-<div class="left">
-
-- 16 miles, 6 wards
-- JFK: 25,000 vehicles/day, ≤2,000/hr
-</div>
-
-<video class="wt-vid" src="/wt.mp4" autoplay muted loop controls />
-
-<div class="left">
-
-Children can bike from downtown to Greenville to West Side to Heights and back — **when we make it safe**.
-</div>
-
-<div v-drag="'wt'"><a href="https://www.bikejc.org/ward-tour" target="_blank"><img src="/wt.png" /></a></div>
-
-[wt]: https://www.bikejc.org/ward-tour
-<div v-click class="left">
-<div v-drag="'bb2'"><a href="https://instagram.com/jcbikebus" target="_blank"><img src="/bike-bus2.jpeg" /></a></div>
-<div v-drag="'bb1'"><a href="https://instagram.com/jcbikebus" target="_blank"><img src="/bike-bus1.jpeg" /></a></div>
-</div>
 
 ---
 class: ebikes

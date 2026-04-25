@@ -1,7 +1,7 @@
 ---
 theme: ./theme
-title: Toward Vision Zero in Hudson County
-info: Hudson County Vision Zero Task Force presentation by Hudson County Complete Streets
+title: Data-Driven Advocacy
+info: Hudson County Complete Streets — North Jersey Transit Forum, 4/25/26
 selectable: true
 class: text-center  # apply unocss classes to the current slide
 colorSchema: dark
@@ -11,9 +11,9 @@ mdc: true
 layout: section
 ---
 
-# Toward Vision Zero<br>in Hudson County
+# Data-Driven Advocacy
 
-Hudson County Vision Zero Task Force meeting, 6/24/25
+North Jersey Transit Forum, 4/25/26
 
 Ryan Williams
 
@@ -22,139 +22,99 @@ Hudson County Complete Streets
 <!--
 [hudcostreets.org](https://hudcostreets.org)
 
-Slides: [vz.hccs.dev](https://vz.hccs.dev)
+Slides: [tf26.hccs.dev](https://tf26.hccs.dev)
 -->
-
----
-class: quiz
-dragPos:
-  jfk: 535,0,445,_
----
-
-<style>
-.quiz {
-  &+footer { display: none; }
-  .body {
-    width: 55%;
-  }
-  img { z-index: 1 !important; }
-  .credit {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    z-index: 2;
-    font-size: 0.9rem;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 0.2rem 0.4rem;
-  }
-}
-</style>
-
-# Pop Quiz 💡
-
-<div class="body">
-
-### **Q:** What's the busiest hour of the year on:
-- JFK Boulevard
-- Rt 139
-
-<br/>
-
-# 🤔
-
-<div v-click>Answer in a few slides…</div>
-</div>
-
-<a v-drag="'jfk'" href="https://www.instagram.com/p/DKIkVjuxqsv/" target="_blank"><img src="/jp-jfk.jpg" /></a>
-<!--
-<img v-drag="'jfk'" src="/jp-jfk.jpg" />
--->
-<div class="credit">
-Credit: @jerseyphotographer
-</div>
 
 ---
 class: hccs
 dragPos:
-  tt: 41,347,371,180
-  bus: 427,347,188,180
-  njt: 627,347,188,180
-  path: 427,133,265,_
-  vz: 707,31,228,_
+  bp: 620,20,220,73
+  blr: 620,103,220,132
+  bb: 620,245,220,132
+  vz: 620,387,220,124
 ---
 
 <style>
 .slidev-layout.hccs {
   padding-top: 1.5rem;
   padding-left: 2.7rem;
-  h1 { margin-bottom: 0 }
-  p { margin: 0.4rem 0; }
-  li { line-height: 2rem }
-  blockquote { width: 70% !important; }
-  div.path { height: 36.5% }
-  img {
-    width: 100%;
-    height: 100%;
-    &[src*="path"] {
-      object-fit: cover;
-      object-position: top center;
-    }
+  h1 {
+    max-width: 540px;
+    margin-bottom: 0.2rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
   }
+  p { margin: 0.4rem 0; }
+  li { line-height: 1.5rem }
+  blockquote { width: 50% !important; font-size: 0.9rem; }
   .body {
-    /*font-size: 1rem;*/
+    width: 52%;
+    font-size: 0.92rem;
     p:first-child { margin-top: 0; }
     li {
-      line-height: 1.8rem !important;
+      line-height: 1.5rem !important;
     }
   }
+  .tile {
+    text-align: center;
+  }
+  .tile a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none !important;
+    border: none !important;
+  }
+  .tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: white;
+    border-radius: 4px;
+  }
+  .tile img[src*="logo"] {
+    background: white;
+    padding: 4px;
+  }
 }
-/* TODO: theme var */
-.dark .slidev-layout.hccs img { border: 1px solid white }
-.light .slidev-layout.hccs img { border: 3px solid #00793f }
 </style>
 
 
 # Hudson County Complete Streets
-> Our mission is to improve mobility in Hudson County by advocating for<br/>**safe streets**, pedestrian and cycling **infrastructure**, and **access to transit.**
+> Our mission is to improve mobility in Hudson County by advocating for **safe streets**, pedestrian and cycling **infrastructure**, and **access to transit.**
 
 <div class="body">
 
-Campaigns:
-- [Improve PATH service][PATH]
-- [Bus rapid transit on JFK][JFK]
-- Bike/Ped infrastructure ([Viaduct], [JFK Blvd E])
-- [Oppose $11BN Turnpike-widening][TA]
-- [Hudson County Vision Zero Action Plan][VZ]
+500+ volunteers · 8K newsletter · 9-member board · 2 part-time staff
 
-👉 [hudcostreets.org]
+4 major campaigns:
+- [Better PATH][PATH] — 7,000+ signatures
+- [Better Light Rail][HBLR] — **sign the petition!**
+- [Better Buses][BB] (BRT on JFK)
+- [Vision Zero][VZ] — HC Safety Action Plan
+
+Recent wins:
+- 🎉 [PATH service improvements][path-win] (Nov '25)
+- 🎉 [Turnpike: 1 bridge instead of 2][tt-win] (Mar '26)
+
+Also: [Viaduct], [JFK Blvd E] — 👉 [hudcostreets.org]
 </div>
 
-<div v-drag="'tt'"><a href="https://turnpiketrap.org/" target="_blank"><img src="/tt.png"/></a></div>
-<div v-drag="'bus'"><a href="https://newsletter.hudcostreets.org/archive/save-our-hudson-county-buses-deadline-august-16/" target="_blank"><img src="/bus.jpeg"/></a></div>
-<div v-drag="'njt'"><a href="https://newsletter.hudcostreets.org/archive/action-alert-tell-gov-murphy-142m-for-nj-transit/" target="_blank"><img src="/njt.jpeg"/></a></div>
-<div v-drag="'path'" class="path"><a href="https://hudcostreets.org/panynj" target="_blank"><img src="/path.jpg"/></a></div>
-<div v-drag="'vz'"><a href="https://newsletter.hudcostreets.org/archive/january-2025-vision-zero-plan-launch-jan-11/" target="_blank"><img src="/vz.png"/></a></div>
-<!--
-<img v-drag="'tt'" src="/tt.png"/>
-<img v-drag="'bus'" src="/bus.jpeg"/>
-<img v-drag="'njt'" src="/njt.jpeg"/>
-<img v-drag="'path'" src="/path.jpg"/>
-<img v-drag="'vz'" src="/vz.png"/>
--->
+<div v-drag="'bp'" class="tile"><a href="https://hudcostreets.org/panynj" target="_blank"><img src="/better-path-logo.png"/></a></div>
+<div v-drag="'blr'" class="tile"><a href="https://hudcostreets.org/hblr" target="_blank"><img src="/better-light-rail-logo.png"/></a></div>
+<div v-drag="'bb'" class="tile"><a href="https://hudcostreets.org/better-buses" target="_blank"><img src="/better-buses-hero.webp"/></a></div>
+<div v-drag="'vz'" class="tile"><a href="https://hudcostreets.org/vision-zero" target="_blank"><img src="/vision-zero-logo.webp"/></a></div>
 
 [PATH]: https://hudcostreets.org/panynj
-[JFK]: https://hudcostreets.org/fix-jfk-blvd
+[HBLR]: https://hudcostreets.org/hblr
+[BB]: https://hudcostreets.org/better-buses
 [Viaduct]: https://hudcostreets.org/viaduct
 [JFK Blvd E]: https://hudcostreets.org/jfkblvdeastredesign
-[CP]: https://nyc.streetsblog.org/2025/03/21/advocates-demand-new-jersey-agencies-cough-up-congestion-pricing-data
-[TA]: https://www.nj.com/traffic/2025/03/nj-turnpike-widening-opponents-demand-fresh-cost-and-traffic-numbers-for-107-b-project.html?gift=81525149-0b28-4c98-bd63-b6241996fd00
-[VZ]: https://newsletter.hudcostreets.org/archive/january-2025-vision-zero-plan-launch-jan-11/
+[VZ]: https://hudcostreets.org/vision-zero
+[path-win]: https://hudcostreets.org/news/press-release-path-win
+[tt-win]: https://hudcostreets.org/news/praiseforturnpikeextensionrepairplan
 
 [hudcostreets.org]: https://hudcostreets.org/
-[tt]: https://turnpiketrap.org/
-[bus]: https://newsletter.hudcostreets.org/archive/save-our-hudson-county-buses-deadline-august-16/
-[njt]: https://newsletter.hudcostreets.org/archive/action-alert-tell-gov-murphy-142m-for-nj-transit/
-[vzi]: https://newsletter.hudcostreets.org/archive/january-2025-vision-zero-plan-launch-jan-11/
 
 ---
 class: plots
@@ -183,20 +143,6 @@ dragPos:
   }
 }
 </style>
-
-<!--
-<div v-drag="'hom'"><img src="/hom.png"/></div>
-<div v-drag="'sp'"><img src="/njsp.png"/></div>
-<div v-drag="'path'"><img src="/path-vs19.png"/></div>
-<div v-drag="'jc'"><img src="/jc.gif" /></div>
-<div v-drag="'hc'"><img src="/hc-map.png"/></div>
-<div v-drag="'xbl'"><img src="/xbl.png"/></div>
-<div v-drag="'cb-m'"><img src="/g2410.png"/></div>
-<div v-drag="'cb'"><img src="/cb.png"/></div>
-<div v-drag="'cb-r'"><img src="/cb-r.png"/></div>
-<div v-drag="'cb-g'"><img src="/cb-g.png"/></div>
-<div v-drag="'cb-u'"><img src="/cb-u.png"/></div>
--->
 
 <div v-drag="'hom'" ><a target="_blank" href="https://crashes.hudcostreets.org/#vs-homicides"><img src="/hom.png"/></a></div>
 <div v-drag="'sp'"  ><a target="_blank" href="https://crashes.hudcostreets.org/#per-year"><img src="/njsp.png"/></a></div>
@@ -232,33 +178,19 @@ class: us
   }
 }</style>
 
-# Big picture – US transportation sector is broken
-≈100% car-dependence:
+# US transportation is too car-dependent — and we're falling behind
 
-- [\$TNs][IMF] of subsidies, [\$TNs][debt] of auto debt, [\$TNs][insurance] of auto insurance (other people's crashes)
-- [MMs][deaths] of violent deaths, [10MMs][injuries] of injuries, [10MMs][disease] of respiratory diseases / cognitive impairments
-- [MMmts][CO2] of CO₂; pollution / particulates / noise
-- [Worse mobility][cn hsr], no childhood autonomy, hollowed-out cities, less community
-
-[IMF]: https://www.imf.org/en/Topics/climate-change/energy-subsidies
-[debt]: https://www.lendingtree.com/auto/debt-statistics/
-[insurance]: https://www.statista.com/outlook/fmo/insurances/non-life-insurances/motor-vehicle-insurance/united-states
-[deaths]: https://en.wikipedia.org/wiki/Motor_vehicle_fatality_rate_in_U.S._by_year#By_year
-[injuries]: https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813560#:~:text=In%202022%20an%20estimated%202.38,injured%20from%202020%20to%202021.
-[disease]: https://www.who.int/data/gho/data/themes/topics/indicator-groups/indicator-group-details/GHO/ambient-air-pollution
-[CO2]: https://www.eia.gov/tools/faqs/faq.php?id=307&t=10
-
-[shinkansen]: https://en.wikipedia.org/wiki/Shinkansen#Safety_record
-[cn hsr]: https://www.threads.net/@thetransitguy/post/DGY0GP6B3hD/video-this-is-the-beijing-shanghai-corridor-which-takes-4-hours-and-18-minutes-to-cove
-[world transit]: https://www.thetransportpolitic.com/2023/06/07/once-a-leader-in-urban-rail-investment-the-united-states-now-trails/
-[road deaths per capita]: https://www.nytimes.com/2022/11/27/upshot/road-deaths-pedestrians-cyclists.html
-
-**Unprecedented, civilization-scale disaster**, entirely a policy choice. We have the technology to do better.
+- US trails peer countries on transit investment, road safety, and per-capita VMT
+- [Worse mobility][cn hsr], hollowed-out cities, [\$TNs][debt] of auto debt, [\$TNs][insurance] of auto insurance
 
 ## Theory of change
-- **Internet / Social Media**: shows people what's possible, enables organizing
-- **Data for decision-making**: proliferation of sensors/data and tools for analyzing/responding
-- **New technology**: ebikes/micromobility, faster/quieter transit, app-cars / AVs can reduce car dependence
+- **Data for decision-making** — sensors + open data + analysis tools
+- **Internet / social media** — shows what's possible, enables organizing
+- **New technology** — ebikes/micromobility, faster transit, can reduce car dependence
+
+[debt]: https://www.lendingtree.com/auto/debt-statistics/
+[insurance]: https://www.statista.com/outlook/fmo/insurances/non-life-insurances/motor-vehicle-insurance/united-states
+[cn hsr]: https://www.threads.net/@thetransitguy/post/DGY0GP6B3hD/video-this-is-the-beijing-shanghai-corridor-which-takes-4-hours-and-18-minutes-to-cove
 
 <a target="_blank" href="https://www.thetransportpolitic.com/2023/06/07/once-a-leader-in-urban-rail-investment-the-united-states-now-trails/"><img v-click class="right-overlay" src="/subway-countries.jpeg"/></a>
 
@@ -287,47 +219,108 @@ dragPos:
 </style>
 
 # Hudson County – the opportunity
+
+700K residents, 12 munis — **the size and density of Boston**.
+
 <div v-click="[0,1]">
-<a v-drag="'mode'" href="https://www.njtpa.org/NJTPA/media/Documents/Data-Maps/Modeling-Surveys/Household-Travel-Survey/RHTS_Hudson_f1.pdf" target="_blank"><img src="/njtpa-hc-modes.png" /></a>
-<!--
-<img v-drag="'mode'" src="/njtpa-hc-modes.png" />
--->
+<div v-drag="'mode'"><a href="https://www.njtpa.org/NJTPA/media/Documents/Data-Maps/Modeling-Surveys/Household-Travel-Survey/RHTS_Hudson_f1.pdf" target="_blank"><img src="/njtpa-hc-modes.png" /></a></div>
 </div>
 
-- < 50% of trips by car, today
+- < 50% of trips by car, today (only non-NYC US county)
+- **92%** of NJ→NYC commuters travel by transit
 <div v-click="[1,2]">
-<a v-drag="'cars'" href="https://github.com/hudcostreets/household-vehicles/tree/main/hudson#vehicles-per-household-hudson-county" target="_blank"><img src="/hc_vehs_years_title.png" /></a>
-<!--
-<img v-drag="'cars'" src="/hc_vehs_years_title.png" />
--->
+<div v-drag="'cars'"><a href="https://github.com/hudcostreets/household-vehicles/tree/main/hudson#vehicles-per-household-hudson-county" target="_blank"><img src="/hc_vehs_years_title.png" /></a></div>
 </div>
-<div v-click="1">
+<div v-click="[1,2]">
 
 - 33% of households car-free
 </div>
-<div v-click="2">
+<div v-click="[2,3]">
 
 - 68% of trips are within Hudson County
 </div>
 <div v-click="[2,3]">
-<a v-drag="'intra'" href="https://www.njtpa.org/NJTPA/media/Documents/Data-Maps/Modeling-Surveys/Household-Travel-Survey/RHTS_Hudson_f1.pdf" target="_blank"><img src="/njtpa-intra-hc-crop.png" /></a>
-<!--
-<img v-drag="'intra'" src="/njtpa-intra-hc-crop.png" />
--->
+<div v-drag="'intra'"><a href="https://www.njtpa.org/NJTPA/media/Documents/Data-Maps/Modeling-Surveys/Household-Travel-Survey/RHTS_Hudson_f1.pdf" target="_blank"><img src="/njtpa-intra-hc-crop.png" /></a></div>
 </div>
 <div v-click="3" class="left">
 
 - Perfect size, density, weather for micromobility (bikes, e-bikes, scooters)
 </div>
 <div v-click="3">
-<img v-drag="'weather'" src="/hc-weather.png" />
-<img v-drag="'bike'" src="/hc-bike-len.png" />
+<div v-drag="'weather'"><img src="/hc-weather.png" /></div>
+<div v-drag="'bike'"><img src="/hc-bike-len.png" /></div>
 </div>
+
+---
+layout: section
+class: bus-section
+---
+
+<style>
+.bus-section {
+  &+footer { display: none; }
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  img {
+    display: inline;
+    max-width: 75%;
+    max-height: 80vh;
+    border-radius: 6px;
+  }
+}
+</style>
+
+<a href="https://hudcostreets.org/better-buses" target="_blank"><img src="/better-buses-hero.webp" /></a>
+
+---
+class: brt
+dragPos:
+  jfk: 568,18,402,_
+  cost: 13,311,669,_
+---
+
+<style>
+.brt {
+  &+footer { display: none; }
+  .jfk { z-index: 1 !important; }
+  img[src*="cost"] { z-index: 20 !important; }
+  video {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+  }
+}
+</style>
+# BRT on JFK
+- Bus Rapid Transit: bus lanes, signal priority, etc.
+- Ridership could ≈ a subway line (**10-20x** a car lane)
+
+
+<div v-click="1">
+<video src="/42-brt.mp4" controls loop autoplay muted />
+
+- Can double as bike/ebike/scooter lane
+  - Gets them off sidewalk!
+</div>
+
+<div v-drag="'jfk'" class="jfk"><a href="https://www.hcnj.us/wp-content/uploads/2022/02/JFK_Study-Report_Final.pdf" target="_blank"><img src="/jfk-map.png" /></a></div>
+<div v-click="2">
+<div v-drag="'cost'"><a href="https://www.hcnj.us/wp-content/uploads/2022/02/JFK_Study-Report_Final.pdf" target="_blank"><img src="/jfk-crash-cost.png" /></a></div>
+
+- Crashes on JFK are expensive
+  - $27MM/yr directly from crashes
+  - [$200MM/yr][JFK] total ‼️
+</div>
+
+[JFK]: https://www.hcnj.us/wp-content/uploads/2022/02/JFK_Study-Report_Final.pdf
 
 ---
 class: xbl
 dragPos:
-  xbl: 300,20,665,_
+  xbl: 350,40,540,360
 ---
 
 <style>
@@ -356,156 +349,61 @@ as 5 car lanes (Lincoln+Holland) _combined_ 🤯.
 [xbl]: https://www.panynj.gov/bridges-tunnels/en/lincoln-tunnel/xbl.html
 [xbl faq]: https://www.panynj.gov/port-authority/en/help-center/faq/bridges-and-tunnels-faq.html
 
-<a href="https://github.com/hudcostreets/hudson-transit#peak" target="_blank"><img v-drag="'xbl'" src="/xbl.png"/></a>
-
-<!--
-<img v-drag="'xbl'" src="/xbl.png"/>
--->
-
----
-class: quiz-a
-dragPos:
-  wt: 366,211,297,_
-  bb1: 196,17,385,_
-  bb2: 580,16,392,_
----
-
-<style>
-.quiz-a {
-  &+footer { display: none; }
-  .body {
-    width: 75%;
-    margin-bottom: .5rem;
-  }
-  & > div:nth-child(2) {
-    margin-top: 0;
-  }
-  video.wt {
-    border: 1rem solid #00793f;
-    border-left: none;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-  }
-  .left {
-    width: 36%;
-    &.inner > ul > li { list-style: none; }
-  }
-}
-</style>
-# Pop Quiz (cont.)
-
-<div class="body">
-
-### **Q:** What's the busiest hour of the year on:
-- JFK Boulevard
-- Rt 139
-
-</div>
-<div v-click="1">
-
-### **A:** Jersey City Ward Tour
-<div class="left">
-
-- 2,000 cyclists
-  - Rolling closures: **5-30 minutes**
-  - JFK: 25,000 vehicles per day, ≤2,000 per hour
-</div>
-
-<video class="wt" src="/wt.mp4" autoplay muted loop controls />
-</div>
-<div v-click="2">
-
-- 16 miles, 6 wards
-</div>
-<div v-click="3" class="left">
-
-- Children can bike from downtown, to Greenville, to West Side, to Heights, and back.
-</div>
-<div v-click="4" class="left inner">
-<ul><li><ul><li>When we make it safe (no cars)</li></ul></li></ul>
-</div>
-<div v-click="2">
-<a v-drag="'wt'" href="https://www.bikejc.org/ward-tour" target="_blank"><img src="/wt.png" /></a>
-<!--
-<img v-drag="'wt'" src="/wt.png" />
--->
-</div>
-<div v-click="3" class="left">
-<a v-drag="'bb2'" href="https://instagram.com/jcbikebus" target="_blank"><img src="/bike-bus2.jpeg" /></a>
-<a v-drag="'bb1'" href="https://instagram.com/jcbikebus" target="_blank"><img src="/bike-bus1.jpeg" /></a>
-<!--
-<img v-drag="'bb2'" src="/bike-bus2.jpeg" />
-<img v-drag="'bb1'" src="/bike-bus1.jpeg" />
--->
-</div>
-
----
-layout: section
----
-# Status Quo
+<div v-drag="'xbl'"><a href="https://hbt.hccs.dev" target="_blank"><img src="/hbt-bubble-1h.png"/></a></div>
 
 ---
 class: deaths
 dragPos:
   plot: 20,218,370,_
   stats: 397,217,224,_
-  homs: 55,127,689,_
   map: 629,92,342,_
 ---
 
 <style>
-
 .deaths {
   &+footer { display: none; }
-  .slidev-vclick-hidden { display: none; }
+  padding: 1.4rem 0 0 2rem;
   h1 {
-    position: relative;
-    z-index: 10
+    margin-bottom: 0.3rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    max-width: 65%;
+  }
+  .body {
+    width: 60%;
+    font-size: 0.92rem;
+    li { line-height: 1.4rem; }
+    p { margin: 0.3rem 0; }
   }
   img {
-    z-index: 1 !important;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
   .link {
     position: absolute;
     right: 1rem;
     bottom: 0;
     font-size: 0.9rem;
-    z-index: 2;
   }
 }
 </style>
 
-<div v-click="[0,1]">
-
 # Hudson County – Deaths, Injuries, Property Damage
 
-Car crashes kill more people **than murders**
+<div class="body">
 
-<a v-drag="'homs'" href="https://crashes.hudcostreets.org/#vs-homicides" target="_blank"><img src="/hc-vs-homs.png" /></a>
-<!--
-<img v-drag="'homs'" src="/hc-vs-homs.png" />
--->
-</div>
-<div v-click>
-
-# Hudson County – Deaths, Injuries, Property Damage
+Car crashes kill more people **than murders** — **1.6× more in 2023**, 1.1× since 2018.
 
 - 50 crashes per day (reported to police).
 - Per year:
   - 23 deaths (9 pedestrians, 10 drivers, 2 passengers, 1-2 cyclists)
   - 150 serious injuries, 1,000-4,000 other injuries
+</div>
 
 <div v-drag="'plot'"><a href="https://crashes.hudcostreets.org/c/hudson" target="_blank"><img src="/hc-traffic-deaths.png" /></a></div>
 <div v-drag="'stats'"><a href="https://crashes.hudcostreets.org/c/hudson/#stats" target="_blank"><img src="/hc-crash-stats.png" /></a></div>
 <div v-drag="'map'"><a href="https://crashes.hudcostreets.org" target="_blank"><img src="/hc-crash-map.png" /></a></div>
-<!--
-<img v-drag="'plot'" src="/hc-traffic-deaths.png" />
-<img v-drag="'stats'" src="/hc-crash-stats.png" />
-<img v-drag="'map'" src="/hc-crash-map.png" />
--->
-</div>
 
 <div class="link">
 
@@ -552,84 +450,9 @@ People need (and want) transportation alternatives…
 ["D" air quality grade…][ALA]
 </div>
 
-<a v-drag="'cars'" href="https://github.com/hudcostreets/household-vehicles/tree/main/hudson#vehicles-per-household-hudson-county" target="_blank"><img src="/hc_vehs_title.png" /></a>
-<!--
-<img v-drag="'cars'" src="/hc_vehs_title.png" />
--->
+<div v-drag="'cars'"><a href="https://github.com/hudcostreets/household-vehicles/tree/main/hudson#vehicles-per-household-hudson-county" target="_blank"><img src="/hc_vehs_title.png" /></a></div>
 
 [ALA]: https://www.lung.org/research/sota/city-rankings/states/new-jersey/hudson
-
----
-layout: section
-class: opps-section
----
-
-<style>
-.opps-section {
-  &+footer { display: none; }
-  img {
-    display: inline;
-    width: 70%;
-  }
-}
-</style>
-# Opportunities
-
-<img src="/mode-capacities.png" />
-
----
-class: brt
-dragPos:
-  jfk: 568,18,402,_
-  cost: 13,311,669,_
----
-
-<style>
-.brt {
-  &+footer { display: none; }
-  .jfk { z-index: 1 !important; }
-  img[src*="cost"] { z-index: 20 !important; }
-  video {
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 10;
-  }
-}
-</style>
-# BRT on JFK
-- Bus Rapid Transit: bus lanes, signal priority, etc.
-- Ridership could ≈ a subway line (**10-20x** a car lane)
-
-
-<div v-click="1">
-<video src="/42-brt.mp4" controls loop autoplay muted />
-
-- Can double as bike/ebike/scooter lane
-  - Gets them off sidewalk!
-</div>
-
-<div v-drag="'jfk'" class="jfk"><a href="https://www.hcnj.us/wp-content/uploads/2022/02/JFK_Study-Report_Final.pdf" target="_blank"><img src="/jfk-map.png" /></a></div>
-<!--
-<img v-drag="'jfk'" src="/jfk-map.png" />
--->
-<div v-click="2">
-<a v-drag="'cost'" href="https://www.hcnj.us/wp-content/uploads/2022/02/JFK_Study-Report_Final.pdf" target="_blank"><img src="/jfk-crash-cost.png" /></a>
-<!--
-<img v-drag="'cost'" src="/jfk-crash-cost.png" />
--->
-
-- Crashes on JFK are expensive
-  - $27MM/yr directly from crashes
-  - [$200MM/yr][JFK] total ‼️
-</div>
-
-[JFK]: https://www.hcnj.us/wp-content/uploads/2022/02/JFK_Study-Report_Final.pdf
-
-<!--
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IFg5PRpeLzs?t=18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
--->
 
 ---
 layout: iframe-right
@@ -666,7 +489,7 @@ class: ctbk
 
 [![](/g2505.png)][2505]
 
-<img v-click="[0,1]" class="right-overlay" src="/cb-opp2.png" />
+<img class="right-overlay" src="/cb-opp2.png" />
 
 <!--
 Show JC+HOB plateau, ebike share over time, Grove St 80/day in Feb '25
@@ -681,6 +504,42 @@ Show station map by add date
 [2505]: https://ctbk.dev/stations?ll=40.717-74.045&z=15&ss=JC115&ym=2505
 [ebikes]: https://ctbk.dev/?s=b&pct&rt=ce&d=2002-&r=jh
 [subs]: https://ctbk.dev/?s=u&pct&r=jh
+
+---
+class: cycling-growth
+---
+
+<style>
+.slidev-layout.cycling-growth {
+  &+footer { display: none; }
+  padding: 0.6rem 1rem 0 1rem;
+  text-align: center;
+  h1 {
+    margin: 0 0 0.3rem 0;
+    font-size: 1.4rem;
+  }
+  a img {
+    max-width: 96%;
+    max-height: 78vh;
+    display: inline-block;
+    border-radius: 4px;
+  }
+  .src {
+    font-size: 0.7rem;
+    opacity: 0.7;
+    margin-top: 0.3rem;
+  }
+}
+</style>
+
+# Cycling is growing — what's possible
+
+<a href="https://www.tandfonline.com/doi/full/10.1080/15568318.2026.2649315" target="_blank"><img src="/cycling-mode-share-4cities.png" /></a>
+
+<div class="src">
+
+Buehler, Pucher, Moran, de Lanversin, Aldred (Apr '26), [Int'l J. of Sustainable Transportation](https://www.tandfonline.com/doi/full/10.1080/15568318.2026.2649315)
+</div>
 
 ---
 layout: iframe-right
@@ -709,12 +568,8 @@ dragPos:
   - [JC Bike Master Plan][bmp] / [bikejc.github.io/bike-master-plan] / [PDF]
 
 <div v-click class="bb">
-<a v-drag="'bb'" href="https://dev.bikejc.org/bike-bus/map" target="_blank"><img src="/bb-map.png" /></a>
-<a v-drag="'bbl'" href="https://dev.bikejc.org/bike-bus" target="_blank"><img src="/bb-lines.png" /></a>
-<!--
-<img v-drag="'bb'" src="/bb-map.png" />
-<img v-drag="'bbl'" src="/bb-lines.png" />
--->
+<div v-drag="'bb'"><a href="https://dev.bikejc.org/bike-bus/map" target="_blank"><img src="/bb-map.png" /></a></div>
+<div v-drag="'bbl'"><a href="https://dev.bikejc.org/bike-bus" target="_blank"><img src="/bb-lines.png" /></a></div>
 
 [Bike bus (2023)][bb]:
 </div>
@@ -724,6 +579,55 @@ dragPos:
 [bmp]: https://street-plans.com/lets-ride-jc-bicycle-master-plan-jersey-city-nj/
 [bikejc.github.io/bike-master-plan]: https://bikejc.github.io/bike-master-plan/
 [PDF]: https://cdn5-hosted.civiclive.com/UserFiles/Servers/Server_6189660/File/Community/Transportation/LetsRideJCMasterPlan-FinalDraft%206.16.19_09_30.pdf
+
+---
+class: ht
+---
+
+<style>
+.slidev-layout.ht {
+  &+footer { display: none; }
+  padding: 1.4rem 0 0 1.5rem;
+  h1 {
+    max-width: 285px;
+    margin-bottom: 0.4rem;
+    font-size: 1.55rem;
+    line-height: 1.85rem;
+  }
+  .col-left {
+    width: 285px;
+    font-size: 0.85rem;
+    li { line-height: 1.3rem; }
+    p { margin: 0.35rem 0; }
+  }
+  video {
+    position: absolute;
+    top: 1.4rem;
+    right: 1.5rem;
+    width: 640px;
+    height: auto;
+    border: 1px solid white;
+  }
+}
+</style>
+
+# [Holland Tunnel bike share][ht]
+
+<div class="col-left">
+
+[ht.hccs.dev][ht]: **1 of 2 lanes** open to bikes for **10 minutes per hour**.
+
+- E/b and W/b alternate, offset 30 mins
+- "Pace" + "Sweep" cars manage transitions
+- ≈600 bikes/hour of new capacity
+  - vs. ≈1,500 cars/hr today
+
+Holland is the only NJ↔NYC crossing without a transit/bike option.
+</div>
+
+<a href="https://ht.hccs.dev" target="_blank"><video src="/ht.mp4" autoplay muted loop controls /></a>
+
+[ht]: https://ht.hccs.dev
 
 ---
 class: vd
@@ -762,15 +666,69 @@ dragPos:
 <div v-click>
 <div class="drag" v-drag="'guy'"><a href="https://www.hcnj.us/blog/2025/05/22/15886/" target="_blank"><img src="/vd-pr.png" /></a></div>
 </div>
-<!--
-<img v-drag="'vd0'" src="/vd0.png" />
-<img v-drag="'vd1'" src="/vd1.png" />
-<div v-click>
-<img v-drag="'guy'" src="/vd-pr.png" />
-</div>
--->
 
 [vd]: https://www.hcnj.us/blog/2025/05/22/15886/
+
+---
+class: wt
+dragPos:
+  wt: 366,211,297,_
+  bb1: 196,17,385,_
+  bb2: 580,16,392,_
+---
+
+<style>
+.wt {
+  &+footer { display: none; }
+  .body {
+    width: 75%;
+    margin-bottom: .5rem;
+  }
+  & > div:nth-child(2) {
+    margin-top: 0;
+  }
+  video.wt-vid {
+    border: 1rem solid #00793f;
+    border-left: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+  }
+  .left {
+    width: 36%;
+    &.inner > ul > li { list-style: none; }
+  }
+}
+</style>
+
+# [Jersey City Ward Tour][wt]
+
+<div class="body">
+
+The **busiest hour of the year** on JFK Blvd and Rt 139:<br/>2,000 cyclists, rolling closures of 5-30 mins.
+</div>
+
+<div class="left">
+
+- 16 miles, 6 wards
+- JFK: 25,000 vehicles/day, ≤2,000/hr
+</div>
+
+<video class="wt-vid" src="/wt.mp4" autoplay muted loop controls />
+
+<div class="left">
+
+Children can bike from downtown to Greenville to West Side to Heights and back — **when we make it safe**.
+</div>
+
+<div v-drag="'wt'"><a href="https://www.bikejc.org/ward-tour" target="_blank"><img src="/wt.png" /></a></div>
+
+[wt]: https://www.bikejc.org/ward-tour
+<div v-click class="left">
+<div v-drag="'bb2'"><a href="https://instagram.com/jcbikebus" target="_blank"><img src="/bike-bus2.jpeg" /></a></div>
+<div v-drag="'bb1'"><a href="https://instagram.com/jcbikebus" target="_blank"><img src="/bike-bus1.jpeg" /></a></div>
+</div>
 
 ---
 class: ebikes
@@ -806,19 +764,114 @@ dragPos:
 - 💡 E-bike rebate/voucher programs
 </div>
 
-<img v-drag="'bunch'" src="/bunch.jpg" />
-<img v-drag="'baboe'" src="/baboe.jpg" />
+<div v-drag="'bunch'"><img src="/bunch.jpg" /></div>
+<div v-drag="'baboe'"><img src="/baboe.jpg" /></div>
 
 <div v-click="1">
-<a v-drag="'bh'" href="https://www.bikehoboken.org/articles/2024-bike-hoboken-traffic-injury-report" target="_blank"><img src="/bh.png" /></a>
-<a v-drag="'nyc'" href="https://nyc.streetsblog.org/2025/06/10/now-do-cars-adams-and-council-push-for-e-bike-speed-limits-ignores-the-biggest-danger" target="_blank"><img src="/nyc-ebikes.png" /></a>
-<a v-drag="'dot'" href="https://www.nyc.gov/html/dot/html/bicyclists/bikestats.shtml#crashdata" target="_blank"><img src="/nyc-dot.jpg" /></a>
-<!--
-<img v-drag="'bh'" src="/bh.png" />
-<img v-drag="'nyc'" src="/nyc-ebikes.png" />
-<img v-drag="'dot'" src="/nyc-dot.jpg" />
--->
+<div v-drag="'bh'"><a href="https://www.bikehoboken.org/articles/2024-bike-hoboken-traffic-injury-report" target="_blank"><img src="/bh.png" /></a></div>
+<div v-drag="'nyc'"><a href="https://nyc.streetsblog.org/2025/06/10/now-do-cars-adams-and-council-push-for-e-bike-speed-limits-ignores-the-biggest-danger" target="_blank"><img src="/nyc-ebikes.png" /></a></div>
+<div v-drag="'dot'"><a href="https://www.nyc.gov/html/dot/html/bicyclists/bikestats.shtml#crashdata" target="_blank"><img src="/nyc-dot.jpg" /></a></div>
 </div>
+
+---
+class: jct
+dragPos:
+  jct: 380,40,590,_
+---
+
+<style>
+.slidev-layout.jct {
+  &+footer { display: none; }
+  padding: 1.4rem 0 0 1.5rem;
+  h1 {
+    max-width: 340px;
+    margin-bottom: 0.4rem;
+    font-size: 1.55rem;
+    line-height: 1.85rem;
+  }
+  .col-left {
+    width: 340px;
+    font-size: 0.85rem;
+    li { line-height: 1.3rem; }
+    p { margin: 0.35rem 0; }
+  }
+}
+</style>
+
+# [JC property taxes][jct] — TOD pays for transit
+
+<div class="col-left">
+
+- JC has a **$250MM/yr deficit** (and rising)
+- Single downtown towers pay **$10MM/yr** in property tax
+- Parking lots & low-rise next to transit ≈ wasted land
+
+[jct.rbw.sh][jct]: every property tax payment, 2018-2025, mapped to its parcel.
+
+→ Build more housing, **especially near transit**.<br/>
+→ TOD = density = revenue = more transit.
+</div>
+
+<div v-drag="'jct'"><a href="https://jct.rbw.sh" target="_blank"><img src="/jct-west.png" /></a></div>
+
+[jct]: https://jct.rbw.sh
+
+---
+class: srcs
+---
+
+<style>
+.slidev-layout.srcs {
+  &+footer { display: none; }
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  h1 { margin-bottom: 0.5rem; font-size: 1.6rem; }
+  table { font-size: 0.78rem; line-height: 1.2rem; }
+  th, td { padding: 0.25rem 0.5rem !important; }
+}
+</style>
+
+# Data sources
+
+| Agency      | Data                               | Frequency  | Delay | Mirror / Site                                                                                                                |
+|-------------|------------------------------------|------------|-------|------------------------------------------------------------------------------------------------------------------------------|
+| [NJSP]      | Crashes (fatal)                    | Daily      | 1d–3mos | [<logos-github-icon/>][hudcostreets/nj-crashes] [<logos-aws-s3 />][`s3://nj-crashes/njsp`] &nbsp;[crashes.hudcostreets.org] |
+| [NJ DOT]    | Crashes (all)                      | Annually   | 2-3yrs ('23) | [<logos-github-icon/>][hudcostreets/nj-crashes] [<logos-aws-s3 />][`s3://nj-crashes/njdot`] &nbsp;[crashes.hudcostreets.org] |
+| [Lyft]      | Citi Bike ridership                | Monthly    | ≈1wk  | [<logos-github-icon/>][hudcostreets/ctbk.dev] [<logos-aws-s3 />][`s3://ctbk`]                &nbsp;[ctbk.dev]                |
+| [PANYNJ]    | PATH ridership                     | Monthly    | 1-2mos | [<logos-github-icon/>][hudcostreets/path]                                                    &nbsp;[path.hudcostreets.org]   |
+| [NYMTC]     | Hudson River crossings             | Annually   | 1-2yrs ('24) | [<logos-github-icon/>][hudcostreets/hudson-transit] [<logos-google-drive />][HCCS NYMTC]                                     |
+| NJ Transit  | Rides per station/line             | OPRA       | -     | [<logos-google-drive />][HCCS NJT]                                                                                           |
+| NJ Turnpike | Exits × Veh types                  | OPRA       | -     | [<logos-google-drive />][HCCS NJTA]                                                                                          |
+| [Lyft]      | [Citi Bike system status][cb gbfs] | Realtime ([GBFS]) | 1min | -                                                                                                                            |
+| PANYNJ      | [PATH real-time status][path realtime] | Realtime ([GTFS]) | 1min | [<logos-github-icon/>][mrazza/path-data] &nbsp;[<logos-github-icon/>][jamespfennell/path-train-gtfs-realtime]                |
+
+[ctbk.dev]: https://ctbk.dev
+[crashes.hudcostreets.org]: https://crashes.hudcostreets.org
+[path.hudcostreets.org]: https://path.hudcostreets.org
+[hudcostreets/hudson-transit]: https://github.com/hudcostreets/hudson-transit
+
+[NJSP]: https://www.nj.gov/njsp/info/fatalacc/index.shtml
+[NJ DOT]: https://www.nj.gov/transportation/refdata/accident/rawdata01-current.shtm
+[PANYNJ]: https://www.panynj.gov/path/en/about/stats.html
+[NYMTC]: https://www.nymtc.org/en-us/Data-and-Modeling/Transportation-Data-and-Statistics/Publications/Hub-Bound-Travel
+[Lyft]: https://citibikenyc.com/system-data
+
+[`s3://nj-crashes/njsp`]: https://nj-crashes.s3.amazonaws.com/index.html#/njsp/data
+[`s3://nj-crashes/njdot`]: https://nj-crashes.s3.amazonaws.com/index.html#/njdot/data
+[hudcostreets/path]: https://github.com/hudcostreets/path
+[hudcostreets/nj-crashes]: https://github.com/hudcostreets/nj-crashes
+[hudcostreets/ctbk.dev]: https://github.com/hudcostreets/ctbk.dev
+[HCCS NYMTC]: https://drive.google.com/drive/folders/1Dm-ZBYxWaOaGgm08XCGOZCuvU2IQaPLN
+[HCCS NJTA]: https://drive.google.com/drive/folders/1Ff4TUP6MmuoGvE0qTE2cgBukoxstB-93
+[HCCS NJT]: https://drive.google.com/drive/folders/1IkeX8EOavWC1uUa1eHIIbVmE8i5tDuwE
+[`s3://ctbk`]: https://ctbk.s3.amazonaws.com/index.html
+
+[GBFS]: https://github.com/MobilityData/gbfs
+[cb gbfs]: https://gbfs.citibikenyc.com/gbfs/2.3/gbfs.json
+[GTFS]: https://gtfs.org/
+
+[path realtime]: https://www.panynj.gov/path/en/index.html
+[mrazza/path-data]: https://github.com/mrazza/path-data
+[jamespfennell/path-train-gtfs-realtime]: https://github.com/jamespfennell/path-train-gtfs-realtime
 
 ---
 layout: section

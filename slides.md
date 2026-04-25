@@ -352,6 +352,32 @@ as 5 car lanes (Lincoln+Holland) _combined_ 🤯.
 <div v-drag="'xbl'"><a href="https://hbt.hccs.dev" target="_blank"><img src="/hbt-bubble-1h.png"/></a></div>
 
 ---
+class: hbt-map
+---
+
+<style>
+.slidev-layout.hbt-map {
+  &+footer { display: none; }
+  padding: 0;
+  background: black;
+  position: relative;
+  a {
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+}
+</style>
+
+<a href="https://hbt.hccs.dev" target="_blank"><img src="/hbt-map-nj-ny.png" /></a>
+
+---
 class: deaths
 dragPos:
   plot: 20,218,370,_
